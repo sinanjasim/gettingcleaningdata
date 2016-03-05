@@ -61,4 +61,4 @@ Fulldata <- cbind(finalfeatures, finalActivities, fullsubj)
 final <- aggregate(x = Fulldata[,1:79], by = list(Fulldata$Activities, Fulldata$Subject), FUN = "mean")
 
 #save the data to file
-write.table(final, file = "C:\\Users\\Sinan Jasim Hadi\\gettingcleaningdata\\Tidydata.txt")
+write.table(final, file = "C:\\Users\\Sinan Jasim Hadi\\gettingcleaningdata\\Tidydata.txt", row.names = FALSE)
